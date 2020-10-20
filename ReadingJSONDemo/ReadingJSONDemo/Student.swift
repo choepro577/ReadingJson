@@ -12,9 +12,18 @@ struct Student: Codable {
     var info: Info?
     var avatar: String?
     var student_id: String?
+    enum CodingKeys: String, CodingKey {
+        case info = "info"
+        case avatar = "avatar"
+        case student_id = "id"
+    }
 }
 
 struct Info: Codable {
     var name: String
     var birthday: String
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case birthday = "birthday"
+    }
 }
