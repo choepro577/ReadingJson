@@ -11,11 +11,11 @@ import Foundation
 struct Student: Codable {
     var info: Info?
     var avatar: String?
-    var student_id: String?
+    var studentID: String?
     enum CodingKeys: String, CodingKey {
         case info = "info"
         case avatar = "avatar"
-        case student_id = "id"
+        case studentID = "id"
     }
 }
 
