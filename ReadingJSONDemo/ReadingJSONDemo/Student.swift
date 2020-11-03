@@ -15,7 +15,7 @@ struct Student: Codable {
     enum CodingKeys: String, CodingKey {
         case info = "info"
         case avatar = "avatar"
-        case studentID = "id"
+        case studentID = "student_id"
     }
 }
 

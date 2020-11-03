@@ -34,7 +34,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DataTableViewCell", for: indexPath) as! DataTableViewCell
         cell.nameStudentLabel.text = data[indexPath.row].info?.name
         cell.birthdayLabel.text = data[indexPath.row].info?.birthday
-        cell.studenIDLabel.text = data[indexPath.row].studentID
         cell.loadAvataImage(url: data[indexPath.row].avatar ?? "", index: indexPath.row)
         cell.tag = indexPath.row
         return cell
